@@ -1,0 +1,63 @@
+ 1. With react native you can write a codebase which can run on both Android and IOS 
+ 2. ALlow you to use native componentes which make better components and more seamsless UX
+ 3. Hot reloading
+
+ 4. Advantages of expo
+  You dont have to worry about configuring your dev envirnoment and native dependency
+  expo offer inbuild api for nativation,gesture, camera , map  
+
+  Expo Router is newly lauched 
+  Expo router takes a different approach of handling the navigation by using file based routing system 
+
+  Difference betw React and React native
+
+  Instead of rendering the HTML elements , we'll rendering native mobile components
+
+  RN components:
+  1. <Text/> similar to <p/> or <h1/>  
+
+  2. </View> used to create container of other component    
+     similar to <div/> with some added functionality specific to mobile app
+     used flexbox by default 
+  
+  3. <TouchableOpacity/> RN dont have button it have TouchableOpacity 
+
+  function mybutton(props)=>{
+    return (
+        <TouchableOpacity onPress={props.onPress}>
+           <Text>{props.label}</Text>
+        </TouchableOpacity>
+    )
+  }
+
+  4. <ActivityIndicator/> : used to show spinner
+
+  5.  <Flatlist/> : used to rendering a long list items that need to scrolled efficiently 
+       similar to map but has extrra feature :
+         --> Optimized scroll performance 
+         --> item separation
+
+
+       Flatlist -> larger list
+       map --> smaller list   
+
+   6. <ScrollView/> : It like magic box that can hold multiple component and views, providing scrolling container for them
+      similar to overflow: scroll in HTML
+
+   7. <SafeAreaView/> : Provides safe zone to render content without covering device notch,statusbar , home indicator   
+
+
+
+Starting:
+npx create-expo-app@latest -e with-router
+
+1. create 
+    app folder
+     - _layout.js
+     - index.js
+
+ npm i -g expo-cli
+ expo-cli start --tunnel  (if npm start give error)    
+
+
+
